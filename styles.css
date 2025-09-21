@@ -1,0 +1,126 @@
+body {
+    background: #f7fafc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(120, 144, 156, 0.08);
+    max-width: 860px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+h1 {
+    text-align: center;
+    color: #6c63ff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.section-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.9));
+    padding: 1rem 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px rgba(99,102,241,0.03);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-card form {
+    margin-bottom: 0;
+}
+
+input, select, button {
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e0e7ef;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #6c63ff;
+    background: #f3f0ff;
+}
+
+button {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #5548c8;
+}
+
+.table-section {
+    margin-bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f3f8ff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.7rem;
+    text-align: left;
+}
+
+th {
+    background: #e3e8ff;
+    color: #6c63ff;
+    font-weight: 500;
+}
+
+tr:nth-child(even) td {
+    background: #f7fafc;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    background: #e3e8ff;
+    color: #6c63ff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.table-wrapper {
+    overflow: auto;
+}
+
+/* Responsive: keep container narrow on small screens */
+@media (max-width: 520px) {
+    .container {
+        padding: 1rem 1rem;
+        max-width: 420px;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+}
